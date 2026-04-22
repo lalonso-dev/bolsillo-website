@@ -1,0 +1,45 @@
+<svg width="320" height="320" viewBox="96 96 320 320" xmlns="http://www.w3.org/2000/svg" role="img">
+  <title>Bolsillo app icon</title>
+  <desc>Ícono de la app Bolsillo: forma de bolsillo geométrica en verde con moneda blanca adentro.</desc>
+
+  <!-- Icon background: rounded square -->
+  <rect x="96" y="96" width="320" height="320" rx="72" fill="#16a34a"/>
+
+  <!-- Pocket subtle body overlay -->
+  <path d="
+    M 176 184
+    L 336 184
+    Q 348 184 350 196
+    L 362 336
+    Q 363 354 346 358
+    L 166 358
+    Q 149 354 150 336
+    L 162 196
+    Q 164 184 176 184
+    Z
+  " fill="white" opacity="0.15"/>
+
+  <!-- Pocket rim / top band -->
+  <rect x="162" y="172" width="188" height="32" rx="16" fill="white" opacity="0.9"/>
+
+  <!-- Pocket main body -->
+  <path d="
+    M 174 204
+    L 338 204
+    Q 349 204 350 215
+    L 360 334
+    Q 361 350 346 353
+    L 166 353
+    Q 151 350 152 334
+    L 162 215
+    Q 163 204 174 204
+    Z
+  " fill="white" opacity="0.18"/>
+
+  <!-- Coin circle -->
+  <circle cx="256" cy="284" r="44" fill="white" opacity="0.95"/>
+
+  <!-- $ symbol -->
+  <text x="256" y="301" font-family="'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="52" font-weight="700" text-anchor="middle" fill="#16a34a">$</text>
+
+</svg>

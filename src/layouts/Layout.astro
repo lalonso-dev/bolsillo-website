@@ -1,0 +1,104 @@
+---
+interface Props {
+  title?: string;
+  description?: string;
+  canonical?: string;
+  ogImage?: string;
+}
+
+const {
+  title = 'Bolsillo — Finanzas personales sin complicaciones',
+  description = 'App de finanzas personales 100% local para Android. Sin cuenta, sin servidor. Controla pagos, deudas, ahorros y más.',
+  canonical = 'https://bolsillo.site',
+  ogImage = 'https://bolsillo.site/5shots_so.png',
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="es-MX">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Primary SEO -->
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Lucas Alonso — lalonso.dev" />
+    <meta name="keywords" content="finanzas personales, app android, pagos recurrentes, deudas, ahorros, apartados, tandas, mercado, presupuesto, sin internet, offline, gratis, México" />
+
+    <!-- Open Graph -->
+    <meta property="og:type"        content="website" />
+    <meta property="og:locale"      content="es_MX" />
+    <meta property="og:site_name"   content="Bolsillo" />
+    <meta property="og:url"         content={canonical} />
+    <meta property="og:title"       content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image"       content={ogImage} />
+    <meta property="og:image:width"  content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt"    content="Bolsillo — App de finanzas personales para Android" />
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card"        content="summary_large_image" />
+    <meta name="twitter:title"       content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image"       content={ogImage} />
+    <meta name="twitter:image:alt"   content="Bolsillo — App de finanzas personales para Android" />
+
+    <!-- Theme color (barra del navegador en móvil) -->
+    <meta name="theme-color" content="#006e2f" />
+
+    <!-- Favicons -->
+    <link rel="icon"             type="image/x-icon"   href="/favicon/favicon.ico" />
+    <link rel="icon"             type="image/svg+xml"  href="/favicon/favicon.svg" />
+    <link rel="icon"             type="image/png"      href="/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="apple-touch-icon"                       href="/favicon/apple-touch-icon.png" />
+    <link rel="manifest"                               href="/favicon/site.webmanifest" />
+
+    <!-- Fuentes: Fraunces + DM Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,800;9..144,900&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Bolsillo",
+        "operatingSystem": "Android",
+        "applicationCategory": "FinanceApplication",
+        "description": "App de finanzas personales 100% local para Android. Sin cuenta, sin servidor. Controla pagos, deudas, ahorros y más.",
+        "url": "https://bolsillo.site",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "MXN"
+        },
+        "author": {
+          "@type": "Person",
+          "name": "Lucas Alonso",
+          "url": "https://lalonso.dev"
+        },
+        "inLanguage": "es-MX",
+        "image": "https://bolsillo.site/favicon/web-app-manifest-512x512.png"
+      }
+    </script>
+  </head>
+
+  <style is:global>
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 68px;
+    }
+  </style>
+
+  <body class="bg-brand-bg font-sans text-brand-text antialiased">
+    <slot />
+  </body>
+</html>

@@ -1,0 +1,456 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout
+  title="Política de Privacidad — Bolsillo"
+  description="Bolsillo no recopila, no transmite y no almacena ningún dato personal en servidores externos. Todo vive en tu teléfono."
+  canonical="https://bolsillo.site/privacidad"
+  ogImage="https://bolsillo.site/favicon/web-app-manifest-512x512.png"
+>
+  <Header />
+
+  <main class="max-w-[720px] mx-auto px-6 py-20">
+
+    <p class="text-sm text-brand-subtle mb-8">
+      <a href="/" class="hover:text-brand-green transition-colors">Bolsillo</a>
+      <span class="mx-2">→</span>
+      <span>Privacidad</span>
+    </p>
+
+    <h1 class="font-display font-bold text-5xl text-brand-text mb-3">
+      Política de Privacidad
+    </h1>
+    <p class="text-sm text-brand-subtle mb-2">Última actualización: Abril 2026</p>
+    <p class="text-sm text-brand-subtle mb-10">
+      Elaborada conforme a la
+      <strong class="text-brand-text">Ley Federal de Protección de Datos Personales en Posesión de los Particulares (LFPDPPP)</strong>,
+      vigente en su versión reformada del 21 de marzo de 2025.
+    </p>
+
+    <div class="bg-white border border-brand-border rounded-3xl p-7 mb-16 shadow-level-1">
+      <div class="flex items-start gap-4">
+        <span class="text-3xl shrink-0">🔒</span>
+        <div>
+          <p class="font-sans font-bold text-[18px] text-brand-text mb-2">El resumen honesto</p>
+          <p class="text-[15px] text-brand-muted leading-relaxed">
+            Bolsillo no recopila, no transmite y no almacena ningún dato tuyo en servidores externos.
+            No existe ningún backend, ningún sistema de analíticas, ningún registro de cuenta.
+            Todo vive en tu teléfono. El único tercero que procesa datos es RevenueCat, y únicamente
+            si adquieres el plan Premium. Esta política explica todo con detalle.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="space-y-14">
+
+      <section>
+        <h2 class="font-sans font-bold text-[22px] text-brand-text border-b-2 border-brand-green-light pb-3 mb-5">
+          1. Identidad y datos del responsable
+        </h2>
+        <p class="text-[16px] text-brand-muted leading-[1.8]">
+          En cumplimiento con el artículo 16 de la LFPDPPP, se informa que el
+          <strong class="text-brand-text">Responsable</strong> del tratamiento de datos personales
+          asociados a Bolsillo es:
+        </p>
+        <div class="bg-white border border-brand-border rounded-2xl p-6 shadow-level-1 mt-4">
+          <p class="font-bold text-brand-text text-[16px] mb-1">Lucas Alberto Alonso Cruz</p>
+          <p class="text-[14px] text-brand-muted mb-1">Desarrollador independiente · México</p>
+          <a href="mailto:lalonso.dev@gmail.com" class="text-brand-green font-medium text-sm hover:underline block">
+            lalonso.dev@gmail.com
+          </a>
+          <a href="https://lalonso.dev" target="_blank" rel="noopener noreferrer" class="text-brand-muted text-sm hover:text-brand-green transition-colors block mt-1">
+            lalonso.dev
+          </a>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="font-sans font-bold text-[22px] text-brand-text border-b-2 border-brand-green-light pb-3 mb-5">
+          2. Datos personales que tratamos
+        </h2>
+
+        <div class="flex items-start gap-3 bg-brand-green-light border-l-4 border-brand-green rounded-xl px-5 py-4 mb-5">
+          <span class="text-lg shrink-0 mt-0.5">🔒</span>
+          <p class="text-[15px] font-semibold text-brand-text leading-relaxed">
+            Bolsillo <strong>no recopila datos personales</strong> de forma directa. La app no solicita
+            nombre, correo, teléfono, ubicación, ni ningún otro dato identificador del usuario.
+          </p>
+        </div>
+
+        <p class="text-[16px] text-brand-muted leading-[1.8]">
+          Toda la información que el usuario registra en Bolsillo (montos, fechas, categorías, metas)
+          es ingresada voluntariamente y se almacena exclusivamente en el dispositivo del propio usuario.
+          Esta información <strong class="text-brand-text">no es accesible para el Responsable</strong>
+          ni para ningún tercero a través de la operación normal de la app.
+        </p>
+        <p class="text-[16px] text-brand-muted leading-[1.8] mt-3">
+          Dado que no se tratan datos personales de forma directa, la mayor parte de las
+          obligaciones del LFPDPPP no aplican materialmente. Sin embargo, se emite esta política
+          en cumplimiento del principio de transparencia y para informar al usuario sobre los
+          casos excepcionales descritos más adelante (ver sección 5: Servicios de terceros).
+        </p>
+      </section>
+
+      <section>
+        <h2 class="font-sans font-bold text-[22px] text-brand-text border-b-2 border-brand-green-light pb-3 mb-5">
+          3. Finalidades del tratamiento
+        </h2>
+        <p class="text-[16px] text-brand-muted leading-[1.8]">
+          Conforme al artículo 15 de la LFPDPPP (reforma 2025), se distingue entre
+          finalidades necesarias y voluntarias:
+        </p>
+        <div class="mt-4 space-y-4">
+          <div class="bg-white border border-brand-border rounded-2xl p-5 shadow-level-1">
+            <p class="font-bold text-brand-text text-[15px] mb-2">Finalidades necesarias</p>
+            <ul class="space-y-2">
+              {[
+                'Permitir el funcionamiento local de la app en el dispositivo del usuario',
+                'Gestionar la suscripción Premium mediante RevenueCat (solo si el usuario adquiere el plan de pago)',
+              ].map(f => (
+                <li class="flex items-start gap-2 text-[14px] text-brand-muted">
+                  <span class="text-brand-green mt-0.5 shrink-0">✓</span>
+                  <span>{f}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div class="bg-brand-bg border border-brand-border rounded-2xl p-5">
+            <p class="font-bold text-brand-text text-[15px] mb-2">Finalidades voluntarias</p>
+            <p class="text-[14px] text-brand-muted">
+              Ninguna. Bolsillo no tiene finalidades de marketing, perfilamiento, analytics,
+              ni comunicación comercial.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="font-sans font-bold text-[22px] text-brand-text border-b-2 border-brand-green-light pb-3 mb-5">
+          4. Almacenamiento local y ausencia de transferencia
+        </h2>
+        <p class="text-[16px] text-brand-muted leading-[1.8]">
+          Toda la información que el usuario registra en Bolsillo se guarda en una base de datos
+          <strong class="text-brand-text">SQLite</strong> dentro del almacenamiento privado del
+          dispositivo Android. Esta base de datos:
+        </p>
+        <ul class="mt-4 space-y-2.5">
+          {[
+            'No se sincroniza con ningún servidor externo',
+            'No se respalda automáticamente en ningún servicio de nube (ni Google Drive, ni iCloud ni similar)',
+            'No es accesible para el Responsable ni para terceros a través de la operación de la app',
+            'Persiste en el dispositivo hasta que el usuario la elimine, desinstale la app o restablezca el dispositivo de fábrica',
+          ].map(item => (
+            <li class="flex items-start gap-3 text-[15px] text-brand-muted">
+              <span class="text-brand-green font-bold mt-0.5 shrink-0">·</span>
+              <span>{item}</span>
+            </li>
+          ))}
+        </ul>
+        <p class="text-[16px] text-brand-muted leading-[1.8] mt-4">
+          No existe transferencia nacional ni internacional de datos personales derivada del uso
+          ordinario de Bolsillo.
+        </p>
+      </section>
+
+      <section>
+        <h2 class="font-sans font-bold text-[22px] text-brand-text border-b-2 border-brand-green-light pb-3 mb-5">
+          5. Servicios de terceros y transferencia de datos
+        </h2>
+        <p class="text-[16px] text-brand-muted leading-[1.8] mb-5">
+          Bolsillo utiliza un único servicio de terceros que puede implicar tratamiento de datos:
+        </p>
+
+        <div class="bg-white border border-brand-border rounded-2xl p-6 shadow-level-1 mb-4">
+          <div class="flex items-start justify-between gap-4 mb-3">
+            <p class="font-sans font-bold text-[17px] text-brand-text">RevenueCat</p>
+            <span class="text-xs bg-brand-amber-bg text-brand-amber-text font-bold px-3 py-1 rounded-full shrink-0">
+              Solo plan Premium
+            </span>
+          </div>
+          <p class="text-[15px] text-brand-muted leading-relaxed mb-3">
+            RevenueCat es el servicio que gestiona las suscripciones del plan Premium a través
+            de Google Play Store. <strong class="text-brand-text">Solo interactúa con la app
+            si el usuario adquiere el plan de pago.</strong>
+          </p>
+          <p class="text-[15px] text-brand-muted leading-relaxed mb-3">
+            Al procesar una compra, RevenueCat puede recibir:
+          </p>
+          <ul class="space-y-2 mb-4">
+            {[
+              'Un identificador anónimo de instalación (no vinculado a nombre ni correo)',
+              'Datos de la transacción de Google Play necesarios para validar la compra',
+              'País del usuario (inferido por Google Play, no solicitado por Bolsillo)',
+            ].map(item => (
+              <li class="flex items-start gap-2 text-[14px] text-brand-muted">
+                <span class="text-brand-muted mt-0.5 shrink-0">·</span>
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
+          <p class="text-[14px] text-brand-muted mb-3">
+            Si utilizas el <strong class="text-brand-text">plan gratuito</strong>, no hay
+            ninguna interacción con RevenueCat.
+          </p>
+          <a
+            href="https://www.revenuecat.com/privacy"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-brand-green text-sm font-medium hover:underline"
+          >
+            Ver Política de Privacidad de RevenueCat →
+          </a>
+        </div>
+
+        <p class="text-[15px] text-brand-muted leading-relaxed">
+          Bolsillo <strong class="text-brand-text">no utiliza</strong> Firebase, Google Analytics,
+          Crashlytics, Amplitude, Mixpanel, Facebook SDK, Sentry, ni ninguna otra herramienta de
+          analíticas, rastreo de comportamiento o reporte de errores que transmita datos a servidores externos.
+        </p>
+      </section>
+
+      <section>
+        <h2 class="font-sans font-bold text-[22px] text-brand-text border-b-2 border-brand-green-light pb-3 mb-5">
+          6. Notificaciones locales
+        </h2>
+        <p class="text-[16px] text-brand-muted leading-[1.8]">
+          Bolsillo puede enviar notificaciones para recordar pagos próximos o vencidos. Estas
+          notificaciones son <strong class="text-brand-text">100% locales</strong>: se programan
+          y entregan directamente en el dispositivo del usuario, sin pasar por servidores externos,
+          sin servicios de push notifications en la nube (como FCM/Firebase Cloud Messaging) y
+          sin transmitir ningún dato fuera del dispositivo.
+        </p>
+      </section>
+
+      <section>
+        <h2 class="font-sans font-bold text-[22px] text-brand-text border-b-2 border-brand-green-light pb-3 mb-5">
+          7. Función de backup (respaldo)
+        </h2>
+        <p class="text-[16px] text-brand-muted leading-[1.8]">
+          La función de respaldo permite al usuario exportar su base de datos como un archivo
+          local en su dispositivo. El Responsable <strong class="text-brand-text">no interviene
+          en este proceso</strong> ni recibe copia alguna del archivo.
+        </p>
+        <p class="text-[16px] text-brand-muted leading-[1.8] mt-3">
+          El usuario decide libremente qué hace con su archivo de respaldo: guardarlo en Google Drive,
+          enviarlo por WhatsApp, copiarlo a una computadora, etc. Cualquier tratamiento posterior
+          del archivo queda fuera del ámbito de esta política y es responsabilidad exclusiva del usuario
+          y de los servicios que elija para almacenarlo.
+        </p>
+      </section>
+
+      <section>
+        <h2 class="font-sans font-bold text-[22px] text-brand-text border-b-2 border-brand-green-light pb-3 mb-5">
+          8. Permisos del sistema operativo
+        </h2>
+        <p class="text-[16px] text-brand-muted leading-[1.8] mb-5">
+          Bolsillo solicita únicamente los permisos de Android estrictamente necesarios para su funcionamiento:
+        </p>
+        <div class="space-y-3">
+          {[
+            {
+              label: 'Almacenamiento',
+              desc: 'Para guardar y restaurar el archivo de respaldo en el almacenamiento del dispositivo.',
+              icon: '💾',
+            },
+            {
+              label: 'Notificaciones',
+              desc: 'Para enviarte recordatorios locales de pagos próximos o vencidos.',
+              icon: '🔔',
+            },
+          ].map(p => (
+            <div class="flex items-start gap-4 bg-white border border-brand-border rounded-xl p-4 shadow-level-1">
+              <span class="text-2xl shrink-0">{p.icon}</span>
+              <div>
+                <p class="font-bold text-brand-text text-[15px]">{p.label}</p>
+                <p class="text-[14px] text-brand-muted mt-0.5">{p.desc}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+        <div class="flex items-start gap-3 bg-brand-green-light border-l-4 border-brand-green rounded-xl px-5 py-4 mt-5">
+          <span class="text-lg shrink-0 mt-0.5">✅</span>
+          <p class="text-sm font-medium text-brand-text leading-relaxed">
+            Bolsillo <strong>no solicita</strong> acceso a cámara, micrófono, ubicación GPS,
+            contactos, calendario del sistema, SMS, ni ningún otro permiso sensible.
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="font-sans font-bold text-[22px] text-brand-text border-b-2 border-brand-green-light pb-3 mb-5">
+          9. Derechos ARCO
+        </h2>
+        <p class="text-[16px] text-brand-muted leading-[1.8]">
+          Conforme a los artículos 22–32 de la LFPDPPP (reforma 2025), el titular de datos personales
+          tiene derecho a ejercer los siguientes derechos frente al Responsable:
+        </p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-5">
+          {[
+            {
+              letra: 'A',
+              nombre: 'Acceso',
+              desc: 'Conocer qué datos personales tuyos tratamos y cómo los usamos.',
+            },
+            {
+              letra: 'R',
+              nombre: 'Rectificación',
+              desc: 'Solicitar la corrección de datos inexactos o incompletos.',
+            },
+            {
+              letra: 'C',
+              nombre: 'Cancelación',
+              desc: 'Solicitar el bloqueo y supresión de tus datos personales.',
+            },
+            {
+              letra: 'O',
+              nombre: 'Oposición',
+              desc: 'Oponerte al tratamiento de tus datos para finalidades específicas.',
+            },
+          ].map(d => (
+            <div class="bg-white border border-brand-border rounded-2xl p-5 shadow-level-1">
+              <div class="flex items-center gap-3 mb-2">
+                <span class="w-8 h-8 bg-brand-green-light text-brand-green font-display font-bold text-lg rounded-lg flex items-center justify-center shrink-0">
+                  {d.letra}
+                </span>
+                <p class="font-bold text-brand-text text-[16px]">{d.nombre}</p>
+              </div>
+              <p class="text-[14px] text-brand-muted leading-relaxed">{d.desc}</p>
+            </div>
+          ))}
+        </div>
+        <div class="mt-5 bg-brand-bg border border-brand-border rounded-xl p-5">
+          <p class="text-[15px] text-brand-muted leading-relaxed">
+            <strong class="text-brand-text">Nota práctica:</strong> dado que Bolsillo no almacena
+            datos personales en servidores propios, el ejercicio de derechos ARCO sobre la información
+            financiera registrada se realiza directamente desde la app (editar, eliminar o restaurar
+            datos) sin necesidad de contactar al Responsable. Para cualquier consulta sobre datos
+            procesados por RevenueCat, deberás ejercer tus derechos directamente ante RevenueCat.
+          </p>
+        </div>
+        <p class="text-[15px] text-brand-muted leading-relaxed mt-4">
+          Para ejercer tus derechos ARCO ante el Responsable, envía una solicitud a
+          <a href="mailto:lalonso.dev@gmail.com" class="text-brand-green hover:underline font-medium">lalonso.dev@gmail.com</a>
+          indicando tu nombre, descripción clara del derecho a ejercer y documentos que acrediten
+          tu identidad. El plazo de respuesta es de <strong class="text-brand-text">20 días hábiles</strong>
+          conforme a la ley.
+        </p>
+      </section>
+
+      <section>
+        <h2 class="font-sans font-bold text-[22px] text-brand-text border-b-2 border-brand-green-light pb-3 mb-5">
+          10. Revocación del consentimiento
+        </h2>
+        <p class="text-[16px] text-brand-muted leading-[1.8]">
+          En cualquier momento el usuario puede revocar su consentimiento para el tratamiento de
+          datos personales enviando una solicitud a
+          <a href="mailto:lalonso.dev@gmail.com" class="text-brand-green hover:underline">lalonso.dev@gmail.com</a>.
+        </p>
+        <p class="text-[16px] text-brand-muted leading-[1.8] mt-3">
+          Para el caso específico de RevenueCat (aplicable solo a usuarios del plan Premium),
+          la revocación implica la cancelación del plan y puede solicitarse también directamente
+          desde Google Play Store.
+        </p>
+      </section>
+
+      <section>
+        <h2 class="font-sans font-bold text-[22px] text-brand-text border-b-2 border-brand-green-light pb-3 mb-5">
+          11. Medidas de seguridad
+        </h2>
+        <p class="text-[16px] text-brand-muted leading-[1.8]">
+          Implementamos las siguientes medidas para proteger la información del usuario:
+        </p>
+        <ul class="mt-4 space-y-2.5">
+          {[
+            'Almacenamiento en la zona de datos privada de la app (Android sandbox), no accesible por otras aplicaciones sin permisos especiales',
+            'PIN de seguridad configurable con bloqueo automático tras intentos fallidos',
+            'Sin transmisión de datos a servidores propios — no hay intercepción posible en tránsito',
+            'Uso de la API oficial de Android para el manejo del almacenamiento local',
+          ].map(item => (
+            <li class="flex items-start gap-3 text-[15px] text-brand-muted">
+              <span class="text-brand-green font-bold mt-0.5 shrink-0">·</span>
+              <span>{item}</span>
+            </li>
+          ))}
+        </ul>
+        <p class="text-[16px] text-brand-muted leading-[1.8] mt-4">
+          Sin embargo, ningún sistema es 100% seguro. La seguridad de los datos almacenados en el
+          dispositivo depende también de las medidas que el propio usuario adopte para proteger su teléfono.
+        </p>
+      </section>
+
+      <section>
+        <h2 class="font-sans font-bold text-[22px] text-brand-text border-b-2 border-brand-green-light pb-3 mb-5">
+          12. Menores de edad
+        </h2>
+        <p class="text-[16px] text-brand-muted leading-[1.8]">
+          Bolsillo no está dirigida específicamente a menores de 13 años y no recopila
+          intencionalmente datos personales de menores. Dado que la app no solicita ningún
+          dato de identificación, no es posible determinar la edad del usuario desde el sistema.
+        </p>
+        <p class="text-[16px] text-brand-muted leading-[1.8] mt-3">
+          Si eres padre, madre o tutor y tienes conocimiento de que un menor está usando la app,
+          puedes contactarnos para orientarte sobre el uso seguro.
+        </p>
+      </section>
+
+      <section>
+        <h2 class="font-sans font-bold text-[22px] text-brand-text border-b-2 border-brand-green-light pb-3 mb-5">
+          13. Cambios a esta política
+        </h2>
+        <p class="text-[16px] text-brand-muted leading-[1.8]">
+          Esta política puede actualizarse periódicamente. Cuando los cambios sean significativos,
+          se notificará al usuario mediante un aviso dentro de la app. La fecha de última
+          actualización siempre estará visible al inicio de este documento.
+        </p>
+        <p class="text-[16px] text-brand-muted leading-[1.8] mt-3">
+          El uso continuado de Bolsillo tras la publicación de cambios implica la aceptación
+          de la política actualizada.
+        </p>
+      </section>
+
+      <section>
+        <h2 class="font-sans font-bold text-[22px] text-brand-text border-b-2 border-brand-green-light pb-3 mb-5">
+          14. Autoridad competente
+        </h2>
+        <p class="text-[16px] text-brand-muted leading-[1.8]">
+          Si consideras que el Responsable ha vulnerado tus derechos respecto a la protección de
+          tus datos personales, tienes el derecho de acudir ante el
+          <strong class="text-brand-text">Instituto Nacional de Transparencia, Acceso a la
+          Información y Protección de Datos Personales (INAI)</strong> para interponer una queja
+          o denuncia.
+        </p>
+        <a
+          href="https://www.inai.org.mx"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-block mt-3 text-brand-green font-medium text-sm hover:underline"
+        >
+          www.inai.org.mx →
+        </a>
+      </section>
+
+      <section>
+        <h2 class="font-sans font-bold text-[22px] text-brand-text border-b-2 border-brand-green-light pb-3 mb-5">
+          15. Contacto
+        </h2>
+        <p class="text-[16px] text-brand-muted leading-[1.8] mb-4">
+          Para ejercer derechos ARCO, revocar consentimiento o cualquier duda sobre esta política:
+        </p>
+        <div class="bg-white border border-brand-border rounded-2xl p-6 shadow-level-1">
+          <p class="font-bold text-brand-text text-[16px] mb-1">Lucas Alonso — Responsable Bolsillo</p>
+          <a href="mailto:lalonso.dev@gmail.com" class="font-sans font-bold text-[18px] text-brand-green hover:underline block mb-1">
+            lalonso.dev@gmail.com
+          </a>
+          <p class="text-sm text-brand-subtle">Tiempo de respuesta: hasta 20 días hábiles</p>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <Footer />
+</Layout>

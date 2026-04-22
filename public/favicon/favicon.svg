@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="320" viewBox="96 96 320 320" role="img"><metadata><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/"><rdf:Description><dc:creator>RealFaviconGenerator</dc:creator><dc:source>https://realfavicongenerator.net</dc:source></rdf:Description></rdf:RDF></metadata><title>Bolsillo app icon</title><desc>Ícono de la app Bolsillo: forma de bolsillo geométrica en verde con moneda blanca adentro.</desc><rect x="96" y="96" width="320" height="320" rx="72" fill="#16a34a"></rect><path d="
+    M 176 184
+    L 336 184
+    Q 348 184 350 196
+    L 362 336
+    Q 363 354 346 358
+    L 166 358
+    Q 149 354 150 336
+    L 162 196
+    Q 164 184 176 184
+    Z
+  " fill="white" opacity="0.15"></path><rect x="162" y="172" width="188" height="32" rx="16" fill="white" opacity="0.9"></rect><path d="
+    M 174 204
+    L 338 204
+    Q 349 204 350 215
+    L 360 334
+    Q 361 350 346 353
+    L 166 353
+    Q 151 350 152 334
+    L 162 215
+    Q 163 204 174 204
+    Z
+  " fill="white" opacity="0.18"></path><circle cx="256" cy="284" r="44" fill="white" opacity="0.95"></circle><text x="256" y="301" font-family="'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="52" font-weight="700" text-anchor="middle" fill="#16a34a">$</text></svg>
