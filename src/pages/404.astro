@@ -1,0 +1,38 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout
+  title="Página no encontrada — Bolsillo"
+  description="Esta página no existe. Regresa al inicio de Bolsillo."
+  canonical="https://bolsillo.site/404"
+>
+  <Header />
+
+  <main class="max-w-[1100px] mx-auto px-6 flex flex-col items-center justify-center text-center py-32 min-h-[60vh]">
+
+    <span class="font-display font-black text-[10rem] leading-none text-brand-green-light select-none">
+      404
+    </span>
+
+    <h1 class="font-display font-bold text-4xl text-brand-text -mt-4 mb-4">
+      Esta página no existe.
+    </h1>
+
+    <p class="text-[17px] text-brand-muted leading-relaxed max-w-[400px] mb-10">
+      Puede que la dirección esté mal escrita o que la página haya sido movida.
+    </p>
+
+    <a
+      href="/"
+      class="inline-flex items-center gap-2 bg-brand-green text-white font-semibold text-[16px] px-7 py-4 rounded-[14px] hover:bg-brand-green-mid transition-colors shadow-level-1"
+    >
+      ← Regresar al inicio
+    </a>
+
+  </main>
+
+  <Footer />
+</Layout>
